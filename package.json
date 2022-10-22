@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.16.4",
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "hubspot": "^2.3.14",
     "netlify-lambda": "^1.4.3",
     "serverless-http": "^1.9.1"
   },
   "devDependencies": {},
   "scripts": {
+    "dev":"node src/api.js",
     "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
     "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
   },
